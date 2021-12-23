@@ -2,7 +2,6 @@
 - hosts: localhost
   become: yes
   gather_facts: no
-  tasks:
 
   tasks:
     - name: Update apt-get repo and cache
