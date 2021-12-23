@@ -3,13 +3,13 @@ FROM python:3.9-alpine
 RUN adduser -D devops
 USER devops
 
-RUN mkdir /opt/flask
+RUN mkdir /home/devops/flask
 
-WORKDIR /opt/flask
-ADD . /opt/flask
+WORKDIR /home/devops/flask
+ADD . /home/devops/flask
 
 RUN pip install -r requirements.txt
 
 EXPOSE 5000
 
-CMD ["python3", "-m", "./main.py"]
+CMD ["python3", "/home/devops/flask/main.py"]
