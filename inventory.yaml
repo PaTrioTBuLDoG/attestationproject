@@ -1,2 +1,2 @@
 [server]
-51.250.0.19 ansible_user=root
+localhost ansible_user=root
